@@ -1,0 +1,13 @@
+prefix=/Users/arpan/Desktop/DATA SCIENCE/02.Python programing language /venv
+exec_prefix=/Users/arpan/Desktop/DATA SCIENCE/02.Python programing language /venv
+libdir=/Users/arpan/Desktop/DATA SCIENCE/02.Python programing language /venv/lib
+sharedlibdir=/Users/arpan/Desktop/DATA SCIENCE/02.Python programing language /venv/lib
+includedir=/Users/arpan/Desktop/DATA SCIENCE/02.Python programing language /venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
