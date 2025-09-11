@@ -15,8 +15,9 @@ print(type(my_list)) # <class 'list'>
 ```
 
 ## 🔹 List Operations
-```
+
 ## 1. Creating a List
+```
 list1 = [1, 2, 3, 4, 5]      # integers
 list2 = ["apple", "banana"]  # strings
 list3 = [10, "hello", 3.5]   # mixed
