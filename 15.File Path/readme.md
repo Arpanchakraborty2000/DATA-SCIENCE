@@ -17,7 +17,7 @@ with open(file_path, "r") as file:
     print(content)
 ```
 Example (Windows):
-```
+```python
 file_path = "C:\\Users\\Arpan\\Documents\\example.txt"
 
 with open(file_path, "r") as file:
@@ -26,7 +26,7 @@ with open(file_path, "r") as file:
 ```
 
 Note: In Windows, you can also use raw strings to avoid double backslashes:
-```
+```python
 file_path = r"C:\Users\Arpan\Documents\example.txt"
 ```
 ## 2. Relative Path
@@ -34,7 +34,7 @@ file_path = r"C:\Users\Arpan\Documents\example.txt"
 A relative path is relative to the current working directory of the Python script.
 
 File in the same directory as script:
-```
+```python
 file_path = "example.txt"
 
 with open(file_path, "r") as file:
@@ -42,7 +42,7 @@ with open(file_path, "r") as file:
 ```
 
 Example with subdirectories:
-```
+```python
 file_path = "data/input.txt"  # file inside 'data' folder
 with open(file_path, "r") as file:
     print(file.read())
@@ -50,7 +50,7 @@ with open(file_path, "r") as file:
 ## 3. Current Working Directory
 
 You can find or change the current working directory using the os module:
-```
+```python
 import os
 
 # Get current directory
@@ -64,7 +64,7 @@ print("Changed Directory:", os.getcwd())
 ## 4. Path Operations using os.path
 
 Python provides the os.path module to manipulate paths.
-```
+```python
 import os
 
 file_path = "/Users/arpan/Documents/example.txt"
@@ -85,7 +85,7 @@ print(new_path)
 ## 5. Using pathlib (Recommended)
 
 Python 3.4+ introduced pathlib, a modern way to handle paths:
-```
+```python
 from pathlib import Path
 
 # Absolute path
@@ -111,7 +111,7 @@ print(file_path.name)
 . → Current directory
 
 .. → Parent directory
-```
+```python
 # File in parent directory
 file_path = "../example.txt"
 
@@ -121,19 +121,19 @@ file_path = "./example.txt"
 ## 7. Examples of Opening Files Using Different Paths
 
 Absolute path:
-```
+```python
 with open("/Users/arpan/Documents/example.txt", "r") as f:
     print(f.read())
 ```
 
 Relative path (subdirectory):
-```
+```python
 with open("data/input.txt", "r") as f:
     print(f.read())
 ```
 
 Using pathlib:
-```
+```python
 from pathlib import Path
 
 file = Path("data/input.txt")
