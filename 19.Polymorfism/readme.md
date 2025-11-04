@@ -139,7 +139,8 @@ Type of Polymorphism	Description
 Function/Method Polymorphism	Same function works on different object types
 Method Overriding	Subclass provides a specific implementation of a parent method
 Abstract Class Polymorphism	Base class defines interface; subclasses implement it
-✅ Key Takeaways
+
+## ✅ Key Takeaways
 
 Polymorphism allows flexible and reusable code.
 
